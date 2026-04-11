@@ -1,0 +1,23 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--color-background)',
+        foreground: 'var(--color-foreground)',
+        card: 'var(--color-card)',
+        muted: 'var(--color-muted)',
+        'muted-foreground': 'var(--color-muted-foreground)',
+        primary: 'var(--color-primary)',
+        accent: 'var(--color-accent)',
+        border: 'var(--color-border)',
+        success: 'var(--color-success)',
+        destructive: 'var(--color-destructive)',
+        subscription: 'var(--color-subscription)',
+      }
+    },
+  },
+  plugins: [],
+}
